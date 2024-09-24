@@ -26,7 +26,7 @@ class StorageConvertor:
                                             "flag": flag}
 
     def save_database_as_csv(self, csv_file):
-        """Saves database as a valid JSON file"""
+        """Saves database as a valid CSV file"""
         with open(csv_file, 'w') as handle:
             handle.write('"title","year","rating","poster","notes","imdb_id","flag"')
             for title, info in self._storage.items():
